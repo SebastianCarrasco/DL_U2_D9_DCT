@@ -1,0 +1,99 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el tamaño total de los elementos */
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    width: 100vw; /* Ancho completo de la ventana */
+    height: 100vh; /* Altura completa de la ventana */
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    font-family: 'Roboto', sans-serif; /* Fuente Roboto de Google Fonts */
+    background-color: #f4f4f4; /* Fondo gris claro */
+}
+
+/* Estilos para la tarjeta del producto */
+.card {
+    color: rgba(255, 255, 255, 0.931); /* Color del texto blanco con opacidad */
+    width: 180px; /* Ancho de la tarjeta */
+    height: 270px; /* Altura de la tarjeta */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.692); /* Sombra alrededor de la tarjeta */
+    background: #7ba238; /* Fondo verde */
+    padding: 20px; /* Espaciado interno */
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    flex-direction: column; /* Apila los elementos en columna */
+    justify-content: space-between; /* Espacia uniformemente los elementos */
+    margin: 10px; /* Añade margen alrededor de la tarjeta */
+}
+
+/* Estilos para la imagen del producto dentro de la tarjeta */
+.card .img-card {
+    height: 100px; /* Altura de la imagen */
+    background-image: url("https://www.amd.com/system/files/2020-05/461767_MSI_Bravo_17_AMD_laptop_1260x709_0.png"); /* Imagen de fondo */
+    background-size: cover; /* La imagen cubre todo el contenedor */
+    background-repeat: no-repeat; /* La imagen no se repite */
+    background-position: center; /* La imagen está centrada */
+    border-radius: 5px; /* Bordes redondeados para la imagen */
+}
+
+/* Estilos para los botones de la tarjeta */
+.card button {
+    background: #e2a30b; /* Fondo amarillo */
+    color: white; /* Texto blanco */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 4px 8px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cursor de mano al pasar sobre el botón */
+    transition: background 0.3s; /* Transición suave para el cambio de fondo */
+}
+
+.card button:hover {
+    background: #c98f08; /* Fondo más oscuro al pasar el mouse */
+}
+
+/* Estilos para la sección total */
+.total-section {
+    width: 200px; /* Ancho de la sección */
+    padding: 35px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye padding en el tamaño total */
+    background: white; /* Fondo blanco */
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1); /* Sombra alrededor de la sección */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Texto centrado */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.total-section p {
+    font-size: 16px; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+}
+
+/* Estilos adicionales para el color dentro de la sección total */
+.total-section .color {
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+.total-section .color div {
+    margin-left: 10px; /* Margen a la izquierda */
+    width: 20px; /* Ancho del div */
+    height: 20px; /* Altura del div */
+    background-color: black; /* Fondo negro */
+    border-radius: 50%; /* Bordes redondeados */
+    border: solid 1px; /* Borde sólido */
+}
+
+/* Estilos adicionales para mejorar la accesibilidad */
+.card h6, .total-section p {
+    font-weight: normal; /* Peso de la fuente normal */
+}
+
+.card p {
+    font-size: 14px; /* Tamaño de fuente */
+}
